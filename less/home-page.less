@@ -1,0 +1,108 @@
+
+// This details styles for the home-page. 
+*{
+    box-sizing: border-box;
+}
+body{
+    margin-left:@bodymargin;
+    margin-right:@bodymargin;
+    margin-top:@bodymargin-top;
+    margin-bottom:@bodymargin-top;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+
+img{
+    height:@imgheight;
+    width:@imgwidth;
+    border-radius:15px;
+    display:inline-block;
+    margin-top:40px;
+}
+
+
+.navbar a{//this is supposed to get the nav links to be centered and evenly spaced. 
+    text-decoration:none;//removes underlines and default blue color
+    display:inline-block;//not working
+    // justify-content: space-evenly;//should get them to spread evenly accross horizontal space
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    border: 1px red solid;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        // align-items: stretch;
+        // align-content: stretch;
+    
+}
+
+h1 {
+    font-size:@headersize;
+}
+
+p {
+    display:inline-block;
+    font-size:@fontbodysize;
+    padding: 15px;
+    padding-top:0px;
+    display: inline-block;
+        // flex-direction: row;
+        // flex-wrap: wrap;
+        // justify-content: flex-start;
+        // align-items: stretch;
+        // align-content: stretch;
+        text-align:left;
+    border: 10px black solid;
+}
+
+.mainsection {
+    border: 5px solid blue;
+}
+
+
+.mainsection div {//this wraps the entire div, any setting here applies to the inside of the div. 
+    padding:@contentpadding;
+    padding-left:50px;
+    border: 5px red solid;
+        display: inline-block;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+        text-align:center;
+        height:@contentsize;
+        width:@contentsize;
+        h2{
+            padding:@contentpadding;
+            margin-left:35px;
+            padding-bottom:0px;
+            text-align:left;
+            border: 9px aqua solid;
+        }
+}
+
+.recipeblock1, .recipeblock2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+        
+        
+}
+
+button{
+    height:50px;
+    width:180px;
+    border-radius:15px;
+    border: 1px green solid;
+    font-family:inherit;
+    font-size:inherit;
+    color:inherit;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}

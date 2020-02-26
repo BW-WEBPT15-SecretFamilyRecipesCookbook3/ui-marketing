@@ -126,6 +126,89 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
+body {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+img {
+  height: 205px;
+  width: 330px;
+  border-radius: 15px;
+  display: inline-block;
+  margin-top: 40px;
+}
+.navbar a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+  border: 1px red solid;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+h1 {
+  font-size: 26px;
+}
+p {
+  font-size: 20px;
+  padding: 15px;
+  padding-top: 0px;
+  display: inline-block;
+  text-align: left;
+  border: 10px black solid;
+}
+.mainsection {
+  border: 5px solid blue;
+}
+.mainsection div {
+  padding: 15px;
+  padding-left: 50px;
+  border: 5px red solid;
+  display: inline-block;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  text-align: center;
+  height: 450px;
+  width: 450px;
+}
+.mainsection div h2 {
+  padding: 15px;
+  margin-left: 35px;
+  padding-bottom: 0px;
+  text-align: left;
+  border: 9px aqua solid;
+}
+.recipeblock1,
+.recipeblock2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+}
+button {
+  height: 50px;
+  width: 180px;
+  border-radius: 15px;
+  border: 1px green solid;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
 #subheader .links {
   text-align: right;
   background: blue;
@@ -151,6 +234,14 @@ nav.links li.links:before {
 header {
   background: blue;
 }
+#header a {
+  text-decoration: none;
+  color: #1B1B1B;
+  font-size: 26px;
+}
+#header #logo {
+  border: red 10px solid;
+}
 #header .icons {
   text-align: right;
 }
@@ -171,8 +262,4 @@ ul.icons li .icon {
 }
 ul.icons li .icon:before {
   font-size: 1.25em;
-}
-img {
-  height: 200px;
-  width: 200px;
 }
