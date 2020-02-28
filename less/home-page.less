@@ -8,7 +8,16 @@ body{
     margin-right:@bodymargin;
     margin-top:@bodymargin-top;
     margin-bottom:@bodymargin-top;
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: Georgia, serif;
+    font-size: 17px;
+    letter-spacing: 4px;
+    word-spacing: 1.6px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: lowercase;
 }
 
 
@@ -20,128 +29,43 @@ img{
     margin-top:40px;
 }
 
-//imported from generator
-#cssmenu {
-background: #f96e5b;
-width: auto;
+.introduction {
+    display:inline-flex;
+    align-items: center;
+    
+    p{
+        padding-top:20px;
+    }
+    #mainimg{
+        height:50%;
+        width:50%;
+        display:inline-block;
+    
+    }
+    
 }
-#cssmenu ul {
-list-style: none;
-margin: 0;
-padding: 0;
-line-height: 1;
-display: block;
-zoom: 1;
-justify-content: space-evenly;
+
+.introduction .intro h1{
+    padding-left:20px;
+    padding-top:50px;
+    text-transform: capitalize;
+    font-size:55px;
 }
-#cssmenu ul:after {
-content: " ";
-display: block;
-font-size: 0;
-height: 0;
-clear: both;
-visibility: hidden;
-}
-#cssmenu ul li {
-display: inline-block;
-padding: 0;
-margin: 0;
-}
-#cssmenu.align-right ul li {
-float: right;
-}
-#cssmenu.align-center ul {
-text-align: center;
-}
-#cssmenu ul li a {
-color: #ffffff;
-text-decoration: none;
-display: block;
-padding: 15px 25px;
-font-family: Georgia, serif;
-font-weight: 700;
-text-transform: uppercase;
-font-size: 14px;
-position: relative;
--webkit-transition: color .25s;
--moz-transition: color .25s;
--ms-transition: color .25s;
--o-transition: color .25s;
-transition: color .25s;
-}
-#cssmenu ul li a:hover {
-color: #333333;
-}
-#cssmenu ul li a:hover:before {
-width: 100%;
-}
-#cssmenu ul li a:after {
-content: "";
-display: block;
-position: absolute;
-right: -3px;
-top: 19px;
-height: 6px;
-width: 6px;
-background: #ffffff;
-opacity: .5;
-}
-#cssmenu ul li a:before {
-content: "";
-display: block;
-position: absolute;
-left: 0;
-bottom: 0;
-height: 3px;
-width: 0;
-background: #333333;
--webkit-transition: width .25s;
--moz-transition: width .25s;
--ms-transition: width .25s;
--o-transition: width .25s;
-transition: width .25s;
-}
-#cssmenu ul li.last > a:after,
-#cssmenu ul li:last-child > a:after {
-display: none;
-}
-#cssmenu ul li.active a {
-color: #333333;
-}
-#cssmenu ul li.active a:before {
-width: 100%;
-}
-#cssmenu.align-right li.last > a:after,
-#cssmenu.align-right li:last-child > a:after {
-display: block;
-}
-#cssmenu.align-right li:first-child a:after {
-display: none;
-}
+
 @media screen and (max-width: 768px) {
-#cssmenu ul li {
-    float: none;
-    display: block;
+    .introduction {
+        float: none;
+        display: block;
+        font-size:13px;
+        #mainimg{
+            height:240px;
+            width:240px;
+            margin-left:15px;
+        }
+    }
 }
-#cssmenu ul li a {
-    width: 100%;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    border-bottom: 1px solid #fb998c;
-}
-#cssmenu ul li.last > a,
-#cssmenu ul li:last-child > a {
-    border: 0;
-}
-#cssmenu ul li a:after {
-    display: none;
-}
-#cssmenu ul li a:before {
-    display: none;
-}
-}
-//end of import
+
+
 
 h1 {
     font-size:@headersize;
@@ -149,9 +73,8 @@ h1 {
 
 p {
     display:inline-block;
-    font-size:@fontbodysize;
     padding: 15px;
-    padding-top:0px;
+    padding-top:10px;
     display: inline-block;
         // flex-direction: row;
         // flex-wrap: wrap;
@@ -159,18 +82,16 @@ p {
         // align-items: stretch;
         // align-content: stretch;
         text-align:left;
-    border: 10px black solid;
-}
+    // border: 1px black solid
+};
 
-.mainsection {
-    border: 5px solid blue;
-}
+
 
 
 .mainsection div {//this wraps the entire div, any setting here applies to the inside of the div. 
     padding:@contentpadding;
     padding-left:50px;
-    border: 5px red solid;
+    // border: 5px red solid;
         display: inline-block;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -185,7 +106,8 @@ p {
             margin-left:35px;
             padding-bottom:0px;
             text-align:left;
-            border: 9px aqua solid;
+            font-size:25;
+            // border: 9px aqua solid;
         }
 }
 
@@ -200,15 +122,63 @@ p {
         
 }
 
-button{
-    height:50px;
-    width:180px;
-    border-radius:15px;
-    border: 1px green solid;
-    font-family:inherit;
-    font-size:inherit;
-    color:inherit;
-    margin-top: 20px;
-    margin-bottom: 30px;
+// .mainsection {
+    // height:50px;
+    // width:180px;
+    // border-radius:15px;
+    // border: 10px green solid;
+    // font-family:inherit;
+    // font-size:inherit;
+    // color:inherit;
+    // margin-top: 20px;
+    // margin-bottom: 30px;
 
+//     a{box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+//     background:linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
+//     background-color:#fc8d83;
+//     border-radius:6px;
+//     border:1px solid #d83526;
+//     display:inline-block;
+//     cursor:pointer;
+//     color:#ffffff;
+//     font-family:Arial;
+//     font-size:15px;
+//     font-weight:bold;
+//     padding:6px 24px;
+//     text-decoration:none;
+//     text-shadow:0px 1px 0px #b23e35;
+//     }
+//     a:active {
+//         position:relative;
+//         top:1px;
+//     }
+//     a:hover {
+//         background:linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
+//         background-color:#e4685d;
+//     }
+// }
+
+.mainsection a {
+	box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+	background:linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
+	background-color:#fc8d83;
+	border-radius:6px;
+	border:1px solid #d83526;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+}
+.mainsection a:hover {
+	background:linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
+	background-color:#e4685d;
+}
+.mainsection a:active {
+	position:relative;
+	top:1px;
 }

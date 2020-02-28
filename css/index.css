@@ -134,7 +134,16 @@ body {
   margin-right: 50px;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: Georgia, serif;
+  font-size: 17px;
+  letter-spacing: 4px;
+  word-spacing: 1.6px;
+  color: #000000;
+  font-weight: 400;
+  text-decoration: none solid #444444;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: lowercase;
 }
 img {
   height: 100%;
@@ -142,6 +151,120 @@ img {
   border-radius: 15px;
   display: inline-block;
   margin-top: 40px;
+}
+.introduction {
+  display: inline-flex;
+  align-items: center;
+}
+.introduction p {
+  padding-top: 20px;
+}
+.introduction #mainimg {
+  height: 50%;
+  width: 50%;
+  display: inline-block;
+}
+.introduction .intro h1 {
+  padding-left: 20px;
+  padding-top: 50px;
+  text-transform: capitalize;
+  font-size: 55px;
+}
+@media screen and (max-width: 768px) {
+  .introduction {
+    float: none;
+    display: block;
+    font-size: 13px;
+  }
+  .introduction #mainimg {
+    height: 240px;
+    width: 240px;
+    margin-left: 15px;
+  }
+}
+h1 {
+  font-size: 20px;
+}
+p {
+  padding: 15px;
+  padding-top: 10px;
+  display: inline-block;
+  text-align: left;
+}
+.mainsection div {
+  padding: 15px;
+  padding-left: 50px;
+  display: inline-block;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  text-align: center;
+  height: 450px;
+  width: 450px;
+}
+.mainsection div h2 {
+  padding: 15px;
+  margin-left: 35px;
+  padding-bottom: 0px;
+  text-align: left;
+  font-size: 25;
+}
+.recipeblock1,
+.recipeblock2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+}
+.mainsection a {
+  box-shadow: inset 0px 1px 0px 0px #f7c5c0;
+  background: linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
+  background-color: #fc8d83;
+  border-radius: 6px;
+  border: 1px solid #d83526;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #b23e35;
+}
+.mainsection a:hover {
+  background: linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
+  background-color: #e4685d;
+}
+.mainsection a:active {
+  position: relative;
+  top: 1px;
+}
+#subheader .links {
+  text-align: right;
+  background: blue;
+}
+nav.links {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+nav.links li {
+  display: inline-block;
+  padding: 0 1em 0 0;
+}
+nav.links li:last-child {
+  padding-right: 0;
+}
+nav.links li .links {
+  color: inherit;
+}
+nav.links li.links:before {
+  font-size: 1.25em;
 }
 #cssmenu {
   background: #f96e5b;
@@ -263,89 +386,12 @@ img {
     display: none;
   }
 }
-h1 {
-  font-size: 20px;
-}
-p {
-  font-size: 20px;
-  padding: 15px;
-  padding-top: 0px;
-  display: inline-block;
-  text-align: left;
-  border: 10px black solid;
-}
-.mainsection {
-  border: 5px solid blue;
-}
-.mainsection div {
-  padding: 15px;
-  padding-left: 50px;
-  border: 5px red solid;
-  display: inline-block;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: stretch;
-  text-align: center;
-  height: 450px;
-  width: 450px;
-}
-.mainsection div h2 {
-  padding: 15px;
-  margin-left: 35px;
-  padding-bottom: 0px;
-  text-align: left;
-  border: 9px aqua solid;
-}
-.recipeblock1,
-.recipeblock2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: stretch;
-}
-button {
-  height: 50px;
-  width: 180px;
-  border-radius: 15px;
-  border: 1px green solid;
-  font-family: inherit;
-  font-size: inherit;
-  color: inherit;
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-#subheader .links {
-  text-align: right;
-  background: blue;
-}
-nav.links {
-  cursor: default;
-  list-style: none;
-  padding-left: 0;
-}
-nav.links li {
-  display: inline-block;
-  padding: 0 1em 0 0;
-}
-nav.links li:last-child {
-  padding-right: 0;
-}
-nav.links li .links {
-  color: inherit;
-}
-nav.links li.links:before {
-  font-size: 1.25em;
-}
-.header {
+header {
   color: #1B1B1B;
   font-size: 20px;
   display: inline-flex;
   font-family: Georgia, serif;
-  font-size: 29px;
+  font-size: 35px;
   letter-spacing: 1px;
   word-spacing: 0.8px;
   color: #000000;
@@ -357,11 +403,11 @@ nav.links li.links:before {
   padding-top: 50px;
   width: 100%;
 }
-.header h2 {
+header h2 {
   margin-right: 0;
   padding-left: 5%;
 }
-.header h4 {
+header h4 {
   margin-left: 15px;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 18px;
@@ -375,19 +421,14 @@ nav.links li.links:before {
   text-transform: capitalize;
   line-height: inherit;
   padding-top: 10px;
-  margin-bottom: none;
+  padding-bottom: 10px;
 }
-.header span {
-  margin: 35px;
+header .login {
+  padding-left: 200px;
+  color: #000000;
 }
-.header span #login {
-  padding-left: 50px;
-}
-.header span #signup {
+header #signup {
   font-size: 15px;
-}
-.header #logo {
-  border: black 10px solid;
-  height: 10%;
-  width: 10%;
+  padding-left: 20px;
+  color: #000000;
 }
