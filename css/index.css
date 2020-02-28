@@ -137,25 +137,134 @@ body {
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 img {
-  height: 205px;
-  width: 330px;
+  height: 100%;
+  width: 100%;
   border-radius: 15px;
   display: inline-block;
   margin-top: 40px;
 }
-.navbar a {
-  text-decoration: none;
+#cssmenu {
+  background: #f96e5b;
+  width: auto;
+}
+#cssmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+  justify-content: space-evenly;
+}
+#cssmenu ul:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#cssmenu ul li {
   display: inline-block;
-  padding: 5px;
-  margin: 10px;
+  padding: 0;
+  margin: 0;
+}
+#cssmenu.align-right ul li {
+  float: right;
+}
+#cssmenu.align-center ul {
   text-align: center;
-  border: 1px red solid;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
+}
+#cssmenu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: Georgia, serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  -webkit-transition: color 0.25s;
+  -moz-transition: color 0.25s;
+  -ms-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+}
+#cssmenu ul li a:hover {
+  color: #333333;
+}
+#cssmenu ul li a:hover:before {
+  width: 100%;
+}
+#cssmenu ul li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #ffffff;
+  opacity: 0.5;
+}
+#cssmenu ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #333333;
+  -webkit-transition: width 0.25s;
+  -moz-transition: width 0.25s;
+  -ms-transition: width 0.25s;
+  -o-transition: width 0.25s;
+  transition: width 0.25s;
+}
+#cssmenu ul li.last > a:after,
+#cssmenu ul li:last-child > a:after {
+  display: none;
+}
+#cssmenu ul li.active a {
+  color: #333333;
+}
+#cssmenu ul li.active a:before {
+  width: 100%;
+}
+#cssmenu.align-right li.last > a:after,
+#cssmenu.align-right li:last-child > a:after {
+  display: block;
+}
+#cssmenu.align-right li:first-child a:after {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #cssmenu ul li {
+    float: none;
+    display: block;
+  }
+  #cssmenu ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fb998c;
+  }
+  #cssmenu ul li.last > a,
+  #cssmenu ul li:last-child > a {
+    border: 0;
+  }
+  #cssmenu ul li a:after {
+    display: none;
+  }
+  #cssmenu ul li a:before {
+    display: none;
+  }
 }
 h1 {
-  font-size: 26px;
+  font-size: 20px;
 }
 p {
   font-size: 20px;
@@ -231,35 +340,54 @@ nav.links li .links {
 nav.links li.links:before {
   font-size: 1.25em;
 }
-header {
-  background: blue;
-}
-#header a {
-  text-decoration: none;
+.header {
   color: #1B1B1B;
-  font-size: 26px;
+  font-size: 20px;
+  display: inline-flex;
+  font-family: Georgia, serif;
+  font-size: 29px;
+  letter-spacing: 1px;
+  word-spacing: 0.8px;
+  color: #000000;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: none;
+  padding-top: 50px;
+  width: 100%;
 }
-#header #logo {
-  border: red 10px solid;
+.header h2 {
+  margin-right: 0;
+  padding-left: 5%;
 }
-#header .icons {
-  text-align: right;
+.header h4 {
+  margin-left: 15px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #000000;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: italic;
+  font-variant: normal;
+  text-transform: capitalize;
+  line-height: inherit;
+  padding-top: 10px;
+  margin-bottom: none;
 }
-ul.icons {
-  cursor: default;
-  list-style: none;
-  padding-left: 0;
+.header span {
+  margin: 35px;
 }
-ul.icons li {
-  display: inline-block;
-  padding: 0 1em 0 0;
+.header span #login {
+  padding-left: 50px;
 }
-ul.icons li:last-child {
-  padding-right: 0;
+.header span #signup {
+  font-size: 15px;
 }
-ul.icons li .icon {
-  color: inherit;
-}
-ul.icons li .icon:before {
-  font-size: 1.25em;
+.header #logo {
+  border: black 10px solid;
+  height: 10%;
+  width: 10%;
 }

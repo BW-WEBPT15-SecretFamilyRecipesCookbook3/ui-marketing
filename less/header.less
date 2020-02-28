@@ -1,38 +1,66 @@
 
 header{
-    background: blue;
+    // background: blue;
 }
 
-#header a{
+.header{
     // border:red 5px solid;
     text-decoration:none;
     color:@fontcolor;
     font-size:@headersize;
+    display:inline-flex;
+    font-family: Georgia, serif;
+    font-size: 29px;
+    letter-spacing: 1px;
+    word-spacing: 0.8px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+    padding-top:50px;
+    width:100%;
+    h2{
+        margin-right:0;
+        padding-left:5%;
+
+    }
+
+    // border: 10px red solid;
+    h4{
+        margin-left:15px;
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        font-size: 18px;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        color: #000000;
+        font-weight: normal;
+        text-decoration: none;
+        font-style: italic;
+        font-variant: normal;
+        text-transform: capitalize;
+        line-height:inherit;
+        padding-top: 10px;
+        margin-bottom:none;
+        
+
+    }
+    span{
+        margin:35px;
+        #login{
+            padding-left:50px;
+        }
+        
+        #signup {
+            font-size:15px;
+        }
+    }
 }
 
 //Social Media Icons in Header Nav bar. 
-#header #logo {
-    border:red 10px solid;
-}
-
-#header .icons {
-    text-align: right;
-}
-ul.icons {
-    cursor: default;
-    list-style: none;
-    padding-left: 0;
-}
-ul.icons li {
-    display:inline-block;
-    padding: 0 1em 0 0;
-}
-ul.icons li:last-child {
-    padding-right: 0;
-}
-ul.icons li .icon {
-    color:inherit;
-}
-ul.icons li .icon:before {
-    font-size: 1.25em;
+.header #logo {
+    border:black 10px solid;
+    height: 10%;
+    width:10%;
 }
