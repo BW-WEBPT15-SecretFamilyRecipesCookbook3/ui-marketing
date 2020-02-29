@@ -133,14 +133,14 @@ body {
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
   font-family: Georgia, serif;
   font-size: 17px;
   letter-spacing: 4px;
   word-spacing: 1.6px;
   color: #000000;
   font-weight: 400;
-  text-decoration: none solid #444444;
+  text-decoration: none;
   font-style: normal;
   font-variant: normal;
   text-transform: lowercase;
@@ -192,40 +192,34 @@ p {
   text-align: left;
 }
 .mainsection div {
+  margin-left: 20px;
   padding: 15px;
-  padding-left: 50px;
   display: inline-block;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: flex-start;
   align-items: stretch;
   align-content: stretch;
-  text-align: center;
   height: 450px;
   width: 450px;
 }
 .mainsection div h2 {
   padding: 15px;
-  margin-left: 35px;
+  margin-left: 25px;
   padding-bottom: 0px;
   text-align: left;
-  font-size: 25;
+  font-size: 25px;
+  text-transform: capitalize;
 }
-.recipeblock1,
-.recipeblock2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: stretch;
+.mainsection div p {
+  padding: 25px;
 }
-.mainsection a {
+.mainsection button {
+  margin-left: 50px;
   box-shadow: inset 0px 1px 0px 0px #f7c5c0;
-  background: linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
-  background-color: #fc8d83;
+  background: linear-gradient(to bottom, #6e5773 5%, #6e5773 100%);
+  background-color: #6e5773;
   border-radius: 6px;
-  border: 1px solid #d83526;
+  border: 1px solid #6e5773;
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
@@ -236,11 +230,11 @@ p {
   text-decoration: none;
   text-shadow: 0px 1px 0px #b23e35;
 }
-.mainsection a:hover {
+.mainsection button:hover {
   background: linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
   background-color: #e4685d;
 }
-.mainsection a:active {
+.mainsection button:active {
   position: relative;
   top: 1px;
 }
@@ -426,6 +420,7 @@ header h4 {
 header .login {
   padding-left: 200px;
   color: #000000;
+  text-decoration: none;
 }
 header #signup {
   font-size: 15px;

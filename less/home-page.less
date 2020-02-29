@@ -7,18 +7,20 @@ body{
     margin-left:@bodymargin;
     margin-right:@bodymargin;
     margin-top:@bodymargin-top;
-    margin-bottom:@bodymargin-top;
+    margin-bottom:80px;
     font-family: Georgia, serif;
     font-size: 17px;
     letter-spacing: 4px;
     word-spacing: 1.6px;
     color: #000000;
     font-weight: 400;
-    text-decoration: none solid rgb(68, 68, 68);
+    text-decoration: none;
     font-style: normal;
     font-variant: normal;
     text-transform: lowercase;
+    
 }
+
 
 
 img{
@@ -88,39 +90,48 @@ p {
 
 
 
-.mainsection div {//this wraps the entire div, any setting here applies to the inside of the div. 
+.mainsection div {//this wraps each of the 4 divs containing img,h2,<p>, any setting here applies to the inside of the div. 
+    
+    margin-left:20px;
     padding:@contentpadding;
-    padding-left:50px;
+    // padding-left:50px;
     // border: 5px red solid;
-        display: inline-block;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-items: stretch;
-        align-content: stretch;
-        text-align:center;
-        height:@contentsize;
-        width:@contentsize;
+    display: inline-block;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    // justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    // text-align:center;
+    height:@contentsize;
+    width:@contentsize;
         h2{
             padding:@contentpadding;
-            margin-left:35px;
+            margin-left:25px;
             padding-bottom:0px;
             text-align:left;
-            font-size:25;
+            font-size:25px;
+            text-transform: capitalize;
             // border: 9px aqua solid;
         }
+        p{
+            padding:25px;
+        }
+       
 }
 
-.recipeblock1, .recipeblock2{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: stretch;
-        align-content: stretch;
+
+
+// .recipeblock1, .recipeblock2{
+//         display: flex;
+//         flex-direction: row;
+//         flex-wrap: wrap;
+//         justify-content: flex-start;
+//         align-items: stretch;
+//         align-content: stretch;
         
         
-}
+// }
 
 // .mainsection {
     // height:50px;
@@ -158,12 +169,13 @@ p {
 //     }
 // }
 
-.mainsection a {
+.mainsection button{
+    margin-left:50px;
 	box-shadow:inset 0px 1px 0px 0px #f7c5c0;
-	background:linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
-	background-color:#fc8d83;
+	background:linear-gradient(to bottom, #6e5773 5%, #6e5773 100%);
+	background-color:#6e5773;
 	border-radius:6px;
-	border:1px solid #d83526;
+	border:1px solid #6e5773;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -174,11 +186,11 @@ p {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #b23e35;
 }
-.mainsection a:hover {
+.mainsection button:hover {
 	background:linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
 	background-color:#e4685d;
 }
-.mainsection a:active {
+.mainsection button:active {
 	position:relative;
 	top:1px;
 }
