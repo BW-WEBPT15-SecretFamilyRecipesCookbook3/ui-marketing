@@ -11,6 +11,7 @@
 
 
 <body>
+    <!-- header + navigation bar -->
     <header class="header">
         <h2>Meet the Makers</h2>
         <h4>This is where the magic happens...</h4>
@@ -20,44 +21,81 @@
     <section>
         <div id='cssmenu'>
             <ul>
-               <li class='active'><a href='#'><span>Home</span></a></li>
+               <li class='active'><a href='index.html'><span>Home</span></a></li>
                <li><a href='#'><span>About us</span></a></li>
                <li><a href='#'><span>Makers</span></a></li>
                <li class='last'><a href='#'><span>Contact</span></a></li>
             </ul>
             </div>
     </section>
-    <section class="introduction">
-        <div class="intro">
-            <h1>Welcome to Secret Recipes</h1>
-            <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.</p>
-        </div>
-        <img id="mainimg" src="img/cuttingboard.jpg" alt="">
-    </section>
-    <section class="mainsection">
-        <div id = "recipe">
-            <img src="img/pancakes.jpg" alt="pancakes">
-            <h2>I'm a Recipe</h2>
-            <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.</p>
-            <a href="#" class ="myButton"><button>Continue Reading</button></a>
-        </div>
-        <div id = "recipe">
-            <img src="img/Spices.jpg" alt="spices">
-            <h2>I'm a Recipe</h2>
-            <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.</p>
-            <a href="#" class ="myButton"><button>Continue Reading</button></a>
-        </div>
-        <div id = "recipe">
-            <img src="img/soup.jpg" alt="soup">
-            <h2>I'm a Recipe</h2>
-            <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.</p>
-            <a href="#" class ="myButton"><button>Continue Reading</button></a>
-        </div>
-        <div id = "recipe">
-            <img src="img/nan.jpg" alt="yummy curry">
-            <h2>I'm a Recipe</h2>
-            <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.</p>
-            <a href="#" class ="myButton"><button>Continue Reading</button></a>
-        </div>
-    </section>
+    <!-- Wrapper for 'makers' all new content -->
+    <div id="wrapper" class="divided">
+
+        <!-- One -->
+            <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+                <div class="content">
+                    <h1>Story</h1>
+                    <p class="makers-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+                    <ul class="actions stacked">
+                        <li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
+                    </ul>
+                </div>
+                <div class="image">
+                    <img src="images/banner.jpg" alt="" />
+                </div>
+            </section>
+
+        <!-- Two -->
+            <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+                <div class="content">
+                    <h2>Magna etiam feugiat</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+                    <ul class="actions stacked">
+                        <li><a href="#" class="button">Learn More</a></li>
+                    </ul>
+                </div>
+                <div class="image">
+                    <img src="images/spotlight01.jpg" alt="" />
+                </div>
+            </section>
+
+        <!-- Three -->
+            <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+                <div class="content">
+                    <h2>Tempus adipiscing</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+                    <ul class="actions stacked">
+                        <li><a href="#" class="button">Learn More</a></li>
+                    </ul>
+                </div>
+                <div class="image">
+                    <img src="images/spotlight02.jpg" alt="" />
+                </div>
+            </section>
+
+        <!-- Four -->
+            <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+                <div class="content">
+                    <h2>Pharetra etiam nulla</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+                    <ul class="actions stacked">
+                        <li><a href="#" class="button">Learn More</a></li>
+                    </ul>
+                </div>
+                <div class="image">
+                    <img src="images/spotlight03.jpg" alt="" />
+                </div>
+            </section>
+
+        <!-- Five -->
+            <section class="wrapper style1 align-center">
+                <div class="inner">
+                    <h2>Massa sed condimentum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
+                </div>
+    </div> <!-- End of Wrapper -->
+
+
+
+
 </body>
