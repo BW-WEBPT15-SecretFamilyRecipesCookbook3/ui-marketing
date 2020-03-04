@@ -427,26 +427,15 @@ header #signup {
   padding-left: 20px;
   color: #000000;
 }
-#wrapper {
-  margin: 0 auto;
-  border: green 5px solid;
-}
-#wrapper img {
-  display: inline-block;
-  height: 300px;
-  width: 400px;
-  margin: 0px;
-  border: blue solid 5px;
-}
-#wrapper .makersbutton {
+.maker-page .makersbutton {
   box-shadow: inset 0px -3px 0px 0px #ffffff;
   background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
   background-color: #ffffff;
   border-radius: 16px;
-  border: 2px solid #dcdcdc;
+  border: 2px solid #F96E5B;
   display: inline-block;
   cursor: pointer;
-  color: #666666;
+  color: black;
   font-family: Georgia;
   font-size: 16px;
   font-weight: bold;
@@ -454,32 +443,48 @@ header #signup {
   padding: 14px 28px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #ffffff;
+  margin-left: 60px;
 }
-#wrapper .makersbutton:hover {
+.maker-page .makersbutton:hover {
   background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
   background-color: #f6f6f6;
 }
-#wrapper .makersbutton:active {
+.maker-page .makersbutton:active {
   position: relative;
   top: 1px;
 }
-#wrapper .content {
+.maker-page img {
+  display: inline-block;
+  height: 375px;
+  width: 450px;
+  margin: 0px;
+  align-items: baseline;
+  border-radius: 0;
+  padding-top: 30px;
+}
+.inside-content {
   display: inline-block;
   height: 400px;
   width: 500px;
   margin: 0px;
-  border: purple solid 5px;
+  padding: 15px;
+  size: 450px;
+}
+.maker-content {
+  vertical-align: text-top;
+}
+.maker-content p {
+  padding: 30px;
+  padding-top: 10px;
 }
 h1 {
   font-size: 3.5rem;
   line-height: 1.2;
   text-transform: capitalize;
+  text-align: center;
 }
 h2 {
   font-size: 2.25rem;
   text-transform: capitalize;
-}
-#wrapper .major {
-  font-size: 1.25rem;
-  display: red solid 5px;
+  padding-left: 10px;
 }
